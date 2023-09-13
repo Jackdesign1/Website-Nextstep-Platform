@@ -1,0 +1,13 @@
+<?php while ($post = mysqli_fetch_array($post_result)) : ?>
+        <div class="container-post">
+            <img src="<?= $row['profile_picture'] ?? 'user-default.jpg'; ?>" alt="Profile Picture">
+            <div>
+                <p><?= $row['name']; ?></p>
+                <p><?= $post['judul_berita']; ?></p>
+                <?php if (!empty($post['gambar_berita'])) : ?>
+                    <img src="<?= $post['gambar_berita']; ?>" alt="">
+                <?php endif; ?>
+                <p><?= $post['isi_berita']; ?></p>
+            </div>
+        </div>
+    <?php endwhile; ?>
