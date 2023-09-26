@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+	box-sizing: border-box;
+
+}
+
+body {
+	background: #f0f2f5;
+	color: #5f5f5f;
+}
+
+a {
+	text-decoration: none;
+	color: #5f5f5f;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fff;
+	padding: 6px 6%;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.1);
+}
+
+.logo img   {
+	width: 30px;
+	margin-right: 15px;
+	display: block;
+}
+
+.navbar-center ul li {
+	display: inline-block;
+	list-style: none;
+}
+
+.navbar-center ul li a {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	margin: 5px 8px;
+	padding-right: 5px;
+	position: relative;
+}
+
+.navbar-center ul li a  img {
+	width: 30px;
+}
+
+.navbar-center ul li a::after {
+	content: '';
+	width: 0;
+	height: 2px;
+	background: #045be6;
+	position: absolute;
+	bottom: -15px;
+	transition: width 0.3s;
+	}
+
+.navbar-center ul li a:hover::after,
+.navbar-center ul li a.active-link::after {
+	width: 100%;
+
+}
+
+.nav-profile-img {
+	width: 40px;
+	border-radius: 50%;
+		cursor: pointer;
+		position: relative;
+}
+
+
+.search-box {
+	background: #f0f2f5;
+	width: 250px;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	padding: 0 15px;
+	
+	}
+
+.navbar-left {
+	display: flex;
+	align-items: center;	
+}
+
+.search-box img {
+	width: 14px;
+}
+
+.search-box input {
+	width: 100%;
+	background: transparent;
+	padding: 8px;
+	outline: none;
+	border: 0;
+	}
+
+/*--------------------------Navbar---------------------------------------*/
+
+.container {
+	padding: 10px 2%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.left-sidebar {
+	flex-basis: 25%;
+	align-self: flex-start;
+	padding: 5px;
+
+}
+
+.top-project {
+	padding: 5px;
+	border: 1px solid black;
+	margin: 10px 0;
+	border-radius: 10px;
+	background: white;
+}
+
+.porject-1 {
+	border: 1px solid black;
+	display: flex;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+
+
+.right-sidebar {
+	flex-basis: 25%;
+	align-self: flex-start;
+}
+
+.for-adsense {
+	border: 1px solid black;
+	background: white;
+}
+
+.adsense-project {
+	display: flex;
+
+}
+
+.adsense-write {
+	padding: 10px;
+}
+
+
+.main-sidebar {
+	flex-basis: 47%;
+
+}
+
+.create-post {
+	background: #fff;
+}
+
+.create-post-input {
+	padding: 20px 25px 10px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.create-post-input img {
+	width: 35px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.create-post-input textarea {
+	width: 100%;
+	height: 70px;
+	border: 1px solid black;
+	outline: 0;
+	resize: none;
+	background: transparent;
+	margin-top: 8px;
+
+}
+
+::placeholder {
+	font-weight: 500;
+}
+
+
+/*-------------------------------POST------------------------------------------*/
+
+.container-post {
+	background: #fff;
+	margin-top: 10px;
+	border: 1px solid black;
+}
+
+.post-status {
+	padding: 20px 25px 10px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.post-status img {
+	width: 35px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.desc-project {
+	padding: 15px;
+}
+.username {
+
+}
+
+.post-button {
+	border: 1px solid black;
+	padding: 0 10px;
+}
+
+.post-button {
+	padding: 0 10px;
+	margin: 10px 0 0 0  ;
+}
+
+.adsense-project {
+	padding: 10px;
+}
+
+.adsense-project-1 {
+
+}
+
+.profile-project {
+	margin: 5px;
+}
+
+.for-recomendation-project {
+	background: white;
+	border: 1px solid black;
+	border-radius:10px ;
+	margin: 10px 0;
+}
+
+.for-recomendation-person {
+	background: white;
+	border: 1px solid black;
+	border-radius:10px ;
+	margin: 10px 0;
+}
+
+.for-recomendation-person img {
+	width: 50px;
+	border-radius: 10px;
+}
